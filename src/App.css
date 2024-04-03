@@ -1,0 +1,15 @@
+/* Target the scrollbar itself */
+&::-webkit-scrollbar {
+  width: 8px; /* Adjust width as needed */
+}
+
+/* Style the scrollbar track */
+&::-webkit-scrollbar-track {
+  background: #09090b; /* Light gray background */
+}
+
+/* Style the scrollbar thumb */
+&::-webkit-scrollbar-thumb {
+  background: #383838; /* Dark gray thumb */
+  border-radius: 6px; /* Rounded corners */
+}
