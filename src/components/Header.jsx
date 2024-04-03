@@ -4,7 +4,6 @@ import { AnimatePresence } from 'framer-motion';
 import { nanoid } from 'nanoid';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { RxHamburgerMenu } from 'react-icons/rx';
-import { CgClose } from 'react-icons/cg';
 
 import { useState } from 'react';
 
@@ -95,7 +94,7 @@ const Header = () => {
       {/* ========== Mobile navigation ========== */}
       <AnimatePresence>
         {isOpen && (
-          <motion.nav
+          <motion.div
             initial={{
               x: '-100%',
               opacity: 0,
@@ -113,41 +112,44 @@ const Header = () => {
               transition: { duration: 0.4 },
             }}
             style={{
-              backdropFilter: 'blur(20px)',
+              backdropFilter: 'blur(10px)',
             }}
-            className=' min-h-dvh absolute top-0 left-0 w-full bg-zinc-950/10 z-40 p-3 flex flex-col items-center '
+            className=' min-h-dvh absolute font-inter -top-2 left-0 w-full bg-zinc-950/90 z-50 p-3 flex flex-col items-center '
           >
             <div className='w-full flex justify-end'>
               <button
                 onClick={handleCloseNav}
-                className=' text-2xl text-gray-300 hover:text-gray-50 cursor-pointer border border-gray-50 px-2 py-1 rounded-md'
+                className=' text-sm text-zinc-950 bg-gray-200  cursor-pointer px-2 py-1 rounded-sm'
               >
-                <CgClose />
+                Close
               </button>
             </div>
-            <ul className=' min-h-dvh flex flex-col items-center justify-center gap-10 '>
-              {navLinks.map((link, index) => (
-                <motion.li
-                  key={link.id}
-                  variants={staggerVariant}
-                  initial='hidden'
-                  animate='visible'
-                  transition={{
-                    duration: 0.3,
-                    delay: 0.4 + index * 0.1,
-                  }}
-                >
-                  <a
-                    onClick={() => setIsOpen(false)}
-                    className=' text-2xl text-gray-300 font-playfairDisplay font-regular p-2 hover:text-gray-50 '
-                    href={link.href}
+
+            <nav className=' mt-[7rem] '>
+              <ul>
+                {navLinks.map((link, index) => (
+                  <motion.li
+                    key={link.id}
+                    variants={staggerVariant}
+                    initial='hidden'
+                    animate='visible'
+                    transition={{
+                      duration: 0.3,
+                      delay: 0.4 + index * 0.1,
+                    }}
                   >
-                    {link.name}
-                  </a>
-                </motion.li>
-              ))}
-            </ul>
-          </motion.nav>
+                    <a
+                      onClick={() => setIsOpen(false)}
+                      className=' w-[85vw] block text-2xl text-gray-300 font-regular hover:text-gray-50 border border-gray-200 rounded-sm py-5 my-5 text-center '
+                      href={link.href}
+                    >
+                      {link.name}
+                    </a>
+                  </motion.li>
+                ))}
+              </ul>
+            </nav>
+          </motion.div>
         )}
       </AnimatePresence>
     </header>

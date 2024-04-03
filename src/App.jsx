@@ -6,7 +6,7 @@ import Hero from './components/Hero';
 function App() {
   return (
     <div className='app overflow-hidden relative'>
-      <div className=' absolute top-2 w-full z-10 '>
+      <div className=' absolute top-2 w-full z-20 '>
         <Header />
       </div>
       <Hero />

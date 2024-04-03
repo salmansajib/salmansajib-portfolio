@@ -37,7 +37,7 @@ const Hero = () => {
 
       {/* ========== hero title description animation ========== */}
       <div className='absolute w-full max-w-[1000px] px-4 md:pt-5 top-[6rem] md:top-1/2 md:left-1/2 md:-translate-x-1/2 md:-translate-y-1/2 flex flex-col md:flex-row items-center justify-center text-gray-200'>
-        <div className=' z-30 flex flex-col gap-4 '>
+        <div className=' z-10 flex flex-col gap-4 '>
           <motion.h2
             initial={{ y: '40px', opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
