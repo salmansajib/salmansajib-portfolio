@@ -36,7 +36,7 @@ const Hero = () => {
       />
 
       {/* ========== hero title description animation ========== */}
-      <div className='absolute w-full max-w-[1000px] px-4 md:pt-5 top-[5rem] md:top-1/2 md:left-1/2 md:-translate-x-1/2 md:-translate-y-1/2 flex flex-col md:flex-row items-center justify-center text-gray-200'>
+      <div className='absolute w-full max-w-[1000px] px-3 md:pt-8 top-[5rem] md:top-1/2 md:left-1/2 md:-translate-x-1/2 md:-translate-y-1/2 flex flex-col md:flex-row items-center justify-center text-gray-200'>
         <div className=' z-10 flex flex-col gap-4 '>
           <motion.h2
             initial={{ y: '40px', opacity: 0 }}
@@ -44,7 +44,7 @@ const Hero = () => {
             transition={{ duration: 0.6 }}
             className='text-xl md:text-2xl font-regular'
           >
-            Hi👋, I Am Salman Farshi
+            Hi👋, I Am Salman Farshi Sajib
           </motion.h2>
           <motion.h1
             initial={{ y: '40px', opacity: 0 }}
