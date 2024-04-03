@@ -1,5 +1,11 @@
 const About = () => {
-  return <div className=' min-h-dvh bg-blue-900 '>About</div>;
+  return (
+    <div id='about' className=' bg-blue-900 '>
+      <article>
+        <h2>About Me</h2>
+      </article>
+    </div>
+  );
 };
 
 export default About;

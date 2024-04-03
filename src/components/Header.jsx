@@ -114,18 +114,18 @@ const Header = () => {
             style={{
               backdropFilter: 'blur(10px)',
             }}
-            className=' min-h-dvh absolute font-inter -top-2 left-0 w-full bg-zinc-950/90 z-50 p-3 flex flex-col items-center '
+            className=' w-full min-h-dvh fixed top-0 left-0 font-inter  bg-zinc-950/90 z-50 p-3 flex flex-col items-center '
           >
             <div className='w-full flex justify-end'>
               <button
                 onClick={handleCloseNav}
-                className=' text-sm text-zinc-950 bg-gray-200  cursor-pointer px-2 py-1 rounded-sm'
+                className=' text-sm text-gray-50 bg-gray-50/15  cursor-pointer px-3 py-1 rounded-full'
               >
                 Close
               </button>
             </div>
 
-            <nav className=' mt-[7rem] '>
+            <nav className=' mt-[8rem] '>
               <ul>
                 {navLinks.map((link, index) => (
                   <motion.li
@@ -140,7 +140,7 @@ const Header = () => {
                   >
                     <a
                       onClick={() => setIsOpen(false)}
-                      className=' w-[85vw] block text-2xl text-gray-300 font-regular hover:text-gray-50 border border-gray-200 rounded-sm py-5 my-5 text-center '
+                      className=' w-[85vw] block text-xl text-gray-300 font-regular hover:text-gray-50 bg-gray-50/15 rounded-md py-5 my-3 text-center '
                       href={link.href}
                     >
                       {link.name}
