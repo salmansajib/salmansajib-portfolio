@@ -38,7 +38,7 @@ const Hero = () => {
         className=' absolute top-[220px] -left-[100px] w-[400px] md:w-[600px] xl:w-[1000px] h-[120px] rounded-full bg-white/5 blur-2xl '
       />
 
-      {/* ========== hero title description animation ========== */}
+      {/* ========== hero title description animated dot grid ========== */}
       <div className='absolute w-full max-w-[1000px] px-3 md:pt-8 top-[5rem] md:top-1/2 md:left-1/2 md:-translate-x-1/2 md:-translate-y-1/2 flex flex-col md:flex-row items-center justify-center text-gray-200'>
         <div className=' z-10 flex flex-col gap-4 '>
           <motion.h2
@@ -80,7 +80,7 @@ const Hero = () => {
               width: 'max-content',
             }}
             href='#contact'
-            className=' group flex items-center gap-3 bg-gradient-to-tr from-blue-200 to-indigo-400 text-zinc-950 font-medium px-7 py-2 rounded-[.25em]  '
+            className=' group flex items-center gap-3 bg-gradient-to-tr from-blue-200 to-indigo-400 text-zinc-950 font-medium mt-3 px-7 py-2 rounded-[.25em]  '
           >
             Contact me{' '}
             <FaArrowRight className='text-zinc-950 group-hover:-rotate-45 transition-all' />
