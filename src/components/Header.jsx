@@ -1,11 +1,8 @@
-import { motion } from 'framer-motion';
-import { AnimatePresence } from 'framer-motion';
-
+import { useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 import { nanoid } from 'nanoid';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { RxHamburgerMenu } from 'react-icons/rx';
-
-import { useState } from 'react';
 
 const navLinks = [
   { id: nanoid(), name: 'Home', href: '#home' },

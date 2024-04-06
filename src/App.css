@@ -10,6 +10,6 @@
 
 /* Style the scrollbar thumb */
 &::-webkit-scrollbar-thumb {
-  background: #383838; /* Dark gray thumb */
+  background: #959595; /* Dark gray thumb */
   border-radius: 6px; /* Rounded corners */
 }

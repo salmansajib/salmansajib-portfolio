@@ -5,7 +5,7 @@ import Hero from './components/Hero';
 
 function App() {
   return (
-    <div className='app overflow-hidden relative'>
+    <div className='app overflow-hidden relative font-inter'>
       <div className=' absolute top-2 w-full z-20 '>
         <Header />
       </div>

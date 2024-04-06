@@ -4,7 +4,10 @@ import AnimatedDots from './AnimatedDots';
 
 const Hero = () => {
   return (
-    <div id='home' className='min-h-dvh bg-zinc-950 overflow-hidden relative '>
+    <section
+      id='home'
+      className='min-h-dvh bg-zinc-950 overflow-hidden relative '
+    >
       {/* ========== Background grid lines ========== */}
       <div
         style={{
@@ -29,9 +32,9 @@ const Hero = () => {
       />
       {/* ========== Background blurry thik line ========== */}
       <motion.div
-        initial={{ x: '-100%', y: '-600%', rotate: '40deg', opacity: 1 }} // Initial position outside the viewport with opacity 0
-        animate={{ x: '0', y: 0, opacity: 1 }} // Animation to bring it inside the viewport with opacity 1
-        transition={{ duration: 1.5, delay: 1, ease: 'easeIn' }} // Animation duration and easing
+        initial={{ x: '-100%', y: '-600%', rotate: '40deg', opacity: 1 }}
+        animate={{ x: '0', y: 0, opacity: 1 }}
+        transition={{ duration: 1.5, delay: 1, ease: 'easeIn' }}
         className=' absolute top-[220px] -left-[100px] w-[400px] md:w-[600px] xl:w-[1000px] h-[120px] rounded-full bg-white/5 blur-2xl '
       />
 
@@ -77,7 +80,7 @@ const Hero = () => {
               width: 'max-content',
             }}
             href='#contact'
-            className=' group flex items-center gap-3 bg-gradient-to-tr from-blue-200 to-indigo-400 text-zinc-950 font-medium px-7 py-2 rounded-md  '
+            className=' group flex items-center gap-3 bg-gradient-to-tr from-blue-200 to-indigo-400 text-zinc-950 font-medium px-7 py-2 rounded-[.25em]  '
           >
             Contact me{' '}
             <FaArrowRight className='text-zinc-950 group-hover:-rotate-45 transition-all' />
@@ -85,12 +88,11 @@ const Hero = () => {
         </div>
 
         {/* ========== Animated dot grid ========== */}
-
         <div className=' mt-[-2rem] md:mt-0 md:ml-[-10rem] '>
           <AnimatedDots width={30} height={25} />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
