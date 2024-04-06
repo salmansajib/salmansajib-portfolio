@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <section
       id='home'
-      className='min-h-dvh bg-zinc-950 overflow-hidden relative '
+      className='min-h-svh bg-zinc-950 overflow-hidden relative '
     >
       {/* ========== Background grid lines ========== */}
       <div
