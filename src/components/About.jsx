@@ -18,7 +18,7 @@ const About = () => {
       </div>
       <div className=' absolute bottom-0 right-5 xl:right-[15rem] z-0 opacity-30 '>
         <DottedGrid
-          width={300}
+          width={400}
           height={100}
           dotSize={5}
           spacing={15}
