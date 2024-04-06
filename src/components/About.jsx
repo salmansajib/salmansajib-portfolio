@@ -26,18 +26,18 @@ const About = () => {
         />
       </div>
 
-      <article className=' max-w-[1000px] mx-auto px-2  '>
+      <article className=' max-w-[1000px] mx-auto px-2 flex flex-col gap-5  '>
         <h2
           style={{
             backgroundImage: `linear-gradient(to top right, #bfdbfe 0%, #818cf8 100%)`,
             backgroundClip: 'text',
             color: 'transparent',
           }}
-          className=' text-5xl md:text-6xl font-semibold z-10  '
+          className=' text-5xl md:text-6xl font-semibold  '
         >
           About Me
         </h2>
-        <p className=' text-[.95rem] md:text-[1rem] max-w-[47rem] mt-8 '>
+        <p className=' text-[.95rem] md:text-[1rem] max-w-[47rem] '>
           Driven by a passion for creating visually engaging and user-friendly
           experiences, I embarked on a journey of self-discovery in the world of
           front-end development. Through countless online tutorials, coding
@@ -50,14 +50,18 @@ const About = () => {
           <span className=' font-bold text-indigo-300 '>UI design</span>{' '}
           principles. This allows me to bridge the gap between functionality and
           aesthetics, ensuring every website I build is not only functional but
-          also a pleasure to interact with.
+          also a pleasure to interact with.{' '}
+          <span className=' font-bold text-indigo-300 '>ReactJS</span> is my
+          JavaScript library of choice due to its component-based architecture
+          and performance optimizations, but I am always open to learning and
+          adapting to other libraries and frameworks as needed.
         </p>
         <a
           href='#projects'
           style={{
             width: 'max-content',
           }}
-          className='group flex items-center gap-3 bg-gradient-to-tr from-blue-200 to-indigo-400 text-zinc-950 font-medium mt-7 px-7 py-2 rounded-[.25em] '
+          className='group flex items-center gap-3 bg-gradient-to-tr from-blue-200 to-indigo-400 text-zinc-950 font-medium px-7 py-2 rounded-[.25em] '
         >
           Projects
           <FaArrowRight className='text-zinc-950 group-hover:-rotate-45 transition-all' />
