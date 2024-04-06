@@ -45,25 +45,25 @@ const About = () => {
               backgroundClip: 'text',
               color: 'transparent',
             }}
-            className=' text-5xl md:text-6xl font-semibold  '
+            className=' text-5xl md:text-7xl font-semibold  '
           >
             About Me
           </h2>
-          <p className=' text-[.95rem] md:text-[1rem] max-w-[45rem] '>
+          <p className=' max-w-[45rem] text-[.95rem] md:text-[1.07rem] font-light '>
             Driven by a passion for creating visually engaging and user-friendly
             experiences, I embarked on a journey of self-discovery in the world
             of front-end development. Through countless online tutorials, coding
             challenges, and personal projects, I have honed my skills in{' '}
-            <span className=' font-bold text-indigo-300 '>HTML</span>,{' '}
-            <span className=' font-bold text-indigo-300 '>CSS</span>, and{' '}
-            <span className=' font-bold text-indigo-300 '>JavaSeript</span>.
+            <span className=' font-medium text-blue-300 '>HTML</span>,{' '}
+            <span className=' font-medium text-blue-300 '>CSS</span>, and{' '}
+            <span className=' font-medium text-blue-300 '>JavaSeript</span>.
             While my focus lies on the technical aspects that bring websites to
             life, I also possess a keen eye for{' '}
-            <span className=' font-bold text-indigo-300 '>UI design</span>{' '}
+            <span className=' font-medium text-blue-300 '>UI design</span>{' '}
             principles. This allows me to bridge the gap between functionality
             and aesthetics, ensuring every website I build is not only
             functional but also a pleasure to interact with.{' '}
-            <span className=' font-bold text-indigo-300 '>ReactJS</span> is my
+            <span className=' font-medium text-blue-300 '>ReactJS</span> is my
             JavaScript library of choice due to its component-based architecture
             and performance optimizations, but I am always open to learning and
             adapting to other libraries and frameworks as needed.
