@@ -6,7 +6,7 @@ const About = () => {
   return (
     <section
       id='about'
-      className=' bg-zinc-950 text-gray-200 min-h-[70vh] relative overflow-hidden '
+      className=' bg-zinc-950 text-gray-200 min-h-[80vh] md:min-h-[70vh] relative overflow-hidden '
     >
       {/* dark overlay */}
       {/* <div
