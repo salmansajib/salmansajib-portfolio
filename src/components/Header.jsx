@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { nanoid } from 'nanoid';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { RxHamburgerMenu } from 'react-icons/rx';
+import { IoClose } from 'react-icons/io5';
 
 const navLinks = [
   { id: nanoid(), name: 'Home', href: '#home' },
@@ -116,9 +117,9 @@ const Header = () => {
             <div className='w-full flex justify-end'>
               <button
                 onClick={handleCloseNav}
-                className=' text-sm text-gray-50 bg-gray-50/15  cursor-pointer px-3 py-1 rounded-full'
+                className=' text-sm text-gray-50 bg-gray-50/15  cursor-pointer px-3 py-1 rounded-full flex items-center gap-1'
               >
-                Close
+                Close <IoClose className='text-lg' />
               </button>
             </div>
 
