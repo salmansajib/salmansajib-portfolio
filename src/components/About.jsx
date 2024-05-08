@@ -32,7 +32,7 @@ const About = () => {
         />
       </div>
 
-      {/* ========== Gradient svg shapes ========== */}
+      {/* ========== Gradient rotating svg shape ========== */}
       <div className=' absolute opacity-30 -top-[70px] -right-[70px] hidden md:block '>
         <motion.svg
           width='500'
@@ -44,7 +44,7 @@ const About = () => {
             rotate: 360,
           }}
           transition={{
-            duration: 150,
+            duration: 170,
             repeat: Infinity,
             ease: 'linear',
           }}
@@ -81,6 +81,7 @@ const About = () => {
         </motion.svg>
       </div>
 
+      {/* ========== Main content ========== */}
       <article className=' max-w-[1000px] mx-auto px-3 absolute w-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-40 '>
         <div className=' flex flex-col gap-5 '>
           <h2
