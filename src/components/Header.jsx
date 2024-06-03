@@ -35,12 +35,12 @@ const Header = () => {
   };
 
   return (
-    <header className='px-2 w-full'>
+    <header className='px-2 w-full fixed'>
       <section className='max-w-[1200px] mx-auto bg-gray-100/10 shadow-md rounded-md text-gray-50 flex items-center justify-between px-4 py-1 backdrop-blur-[10px]'>
         <h1 className='logo text-[1.4rem] text-gray-50 font-bold font-dancingScript cursor-not-allowed'>
           Salman
         </h1>
-        <nav className=' hidden md:block'>
+        <nav className=' hidden md:block '>
           <ul className='flex items-center gap-9'>
             {navLinks.map((link) => (
               <li key={link.id}>

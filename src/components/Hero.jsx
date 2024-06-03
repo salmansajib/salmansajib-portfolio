@@ -13,10 +13,10 @@ const Hero = () => {
         style={{
           backgroundImage: `linear-gradient(
         to right,
-        rgba(255, 255, 255, 0.15) 1px,
+        rgba(243, 244, 246, 0.14) 1px,
         transparent 1px
       ),
-      linear-gradient(to bottom, rgba(255, 255, 255, 0.15) 1px, transparent 1px)`,
+      linear-gradient(to bottom, rgba(243, 244, 246, 0.14) 1px, transparent 1px)`,
           backgroundSize: '27px 27px',
           position: 'absolute',
           inset: 0,
@@ -35,7 +35,7 @@ const Hero = () => {
         initial={{ x: '-100%', y: '-600%', rotate: '40deg', opacity: 1 }}
         animate={{ x: '0', y: 0, opacity: 1 }}
         transition={{ duration: 1.5, delay: 1, ease: 'easeIn' }}
-        className=' absolute top-[220px] -left-[100px] w-[400px] md:w-[600px] xl:w-[1000px] h-[120px] rounded-full bg-white/5 blur-2xl '
+        className=' absolute top-[220px] -left-[100px] w-[400px] md:w-[600px] xl:w-[1000px] h-[120px] rounded-full bg-gray-200/5 blur-2xl '
       />
 
       {/* ========== hero title description animated dot grid ========== */}
@@ -54,7 +54,7 @@ const Hero = () => {
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.3 }}
             style={{
-              backgroundImage: `linear-gradient(to top right, #bfdbfe 0%, #818cf8 100%)`,
+              backgroundImage: `linear-gradient(to right, #bfdbfe 10%,#86efac 60%, #a5b4fc 90%)`,
               backgroundClip: 'text',
               color: 'transparent',
             }}
@@ -80,7 +80,7 @@ const Hero = () => {
               width: 'max-content',
             }}
             href='#contact'
-            className=' group flex items-center gap-3 bg-gradient-to-tr from-blue-200 to-indigo-400 text-zinc-950 font-medium mt-3 px-7 py-2 rounded-[.25em]  '
+            className=' group flex items-center gap-3 bg-gradient-to-tr from-blue-200 to-indigo-400 text-zinc-950 font-medium mt-3 px-6 py-2 rounded-[.25em]  '
           >
             Contact me{' '}
             <FaArrowRight className='text-zinc-950 group-hover:-rotate-45 transition-all' />
