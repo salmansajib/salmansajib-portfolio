@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .gradient-header {
+    @apply text-5xl md:text-7xl font-semibold bg-gradient-to-r from-sky-200 to-indigo-400 text-transparent bg-clip-text;
+  }
+}

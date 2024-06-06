@@ -35,16 +35,7 @@ const About = () => {
       {/* ========== Main content ========== */}
       <article className=' max-w-[1000px] mx-auto px-3 absolute w-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-40 '>
         <div className=' flex flex-col gap-5 '>
-          <h2
-            style={{
-              backgroundImage: `linear-gradient(to right, #bae6fd 10%,#818cf8 70%)`,
-              backgroundClip: 'text',
-              color: 'transparent',
-            }}
-            className=' text-5xl md:text-7xl font-semibold  '
-          >
-            About Me
-          </h2>
+          <h2 className=' gradient-header '>About Me</h2>
           <p className=' max-w-[45rem] text-[.96rem] md:text-[1.05rem] font-light '>
             Driven by a passion for creating visually engaging and user-friendly
             experiences, I embarked on a journey of self-discovery in the world
