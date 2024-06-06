@@ -12,7 +12,7 @@ function Skills() {
     <section className=' w-full bg-zinc-950 text-gray-200 py-[7rem] '>
       <div className=' w-full max-w-[1200px] mx-auto '>
         <h2 className=' gradient-header text-center '>Skills</h2>
-        <div className=' max-w-[900px] mx-auto flex flex-wrap gap-10 items-center justify-center mt-[5rem] '>
+        <div className=' max-w-[900px] mx-auto flex flex-wrap gap-5 md:gap-10 items-center justify-center mt-[5rem] '>
           <IndividualSkills
             iconImage={htmlIcon}
             iconName='HTML'
