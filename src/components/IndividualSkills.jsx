@@ -7,8 +7,8 @@ function IndividualSkills({ iconImage, iconName, alt }) {
       }}
       className=' w-[9.3rem] h-[10.3rem] flex items-center justify-center rounded-md '
     >
-      <div className=' bg-zinc-900 w-[9rem] h-[10rem] flex gap-1 flex-col items-center justify-center rounded-md '>
-        <img src={iconImage} alt={alt} />
+      <div className=' bg-zinc-900 w-[9rem] h-[10rem] flex gap-2 flex-col items-center justify-center rounded-md '>
+        <img className=' w-[64px] h-[64px] ' src={iconImage} alt={alt} />
         <p className=' text-base '>{iconName}</p>
       </div>
     </div>

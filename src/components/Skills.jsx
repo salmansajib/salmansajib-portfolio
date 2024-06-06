@@ -3,7 +3,7 @@ import htmlIcon from '../assets/skill icons/icons8-html5-96.png';
 import cssIcon from '../assets/skill icons/icons8-css3-96.png';
 import javascriptIcon from '../assets/skill icons/icons8-javascript-96.png';
 import tailwindIcon from '../assets/skill icons/icons8-tailwindcss-96.png';
-import reactjsIcon from '../assets/skill icons/icons8-react-80.png';
+import reactjsIcon from '../assets/skill icons/pngwing.com.png';
 import nextjsIcon from '../assets/skill icons/icons8-nextjs-96.png';
 import firebaseIcon from '../assets/skill icons/icons8-firebase-96.png';
 
