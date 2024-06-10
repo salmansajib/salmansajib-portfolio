@@ -5,11 +5,11 @@ function IndividualSkills({ iconImage, iconName, alt }) {
       style={{
         backgroundImage: `linear-gradient(120deg, #bfdbfe 10%,#86efac 60%, #a5b4fc 90%)`,
       }}
-      className=' w-[9.3rem] h-[10.3rem] flex items-center justify-center rounded-md '
+      className="flex h-[10.3rem] w-[9.3rem] items-center justify-center rounded-[.5rem]"
     >
-      <div className=' bg-zinc-900 w-[9rem] h-[10rem] flex gap-2 flex-col items-center justify-center rounded-md '>
-        <img className=' w-[64px] h-[64px] ' src={iconImage} alt={alt} />
-        <p className=' text-base '>{iconName}</p>
+      <div className="flex h-[10rem] w-[9rem] flex-col items-center justify-center gap-2 rounded-[.45rem] bg-zinc-900">
+        <img className="size-[64px]" src={iconImage} alt={alt} />
+        <p className="text-base">{iconName}</p>
       </div>
     </div>
   );
