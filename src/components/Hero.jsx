@@ -53,12 +53,7 @@ const Hero = () => {
             initial={{ y: "40px", opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.3 }}
-            style={{
-              backgroundImage: `linear-gradient(to right, #bfdbfe 10%,#86efac 60%, #a5b4fc 90%)`,
-              backgroundClip: "text",
-              color: "transparent",
-            }}
-            className="text-5xl font-bold md:text-7xl"
+            className="bg-gradient-to-r from-blue-200 from-10% via-green-300 via-60% to-indigo-300 to-90% bg-clip-text text-5xl font-bold text-transparent md:text-7xl"
           >
             Front-end Web Developer
           </motion.h1>
