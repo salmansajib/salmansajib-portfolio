@@ -77,7 +77,7 @@ const Hero = () => {
             href="#contact"
             className="group mt-3 flex items-center gap-3 rounded-[.25em] bg-gradient-to-tr from-blue-200 to-indigo-400 px-6 py-2 font-medium text-zinc-950"
           >
-            Contact me{" "}
+            Contact me
             <FaArrowRight className="text-zinc-950 transition-all group-hover:-rotate-45" />
           </motion.a>
         </div>

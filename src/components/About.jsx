@@ -1,6 +1,5 @@
 import DottedGrid from "./DottedGrid";
 import { FaArrowRight } from "react-icons/fa";
-import { motion } from "framer-motion";
 
 const About = () => {
   const dottedGradientColors = ["#c4b5fd", "#c4b5fd"];
@@ -62,25 +61,16 @@ const About = () => {
             and performance optimizations, but I am always open to learning and
             adapting to other libraries and frameworks as needed.
           </p>
-          <motion.a
-            initial={{
-              scale: 1,
-            }}
-            whileHover={{
-              scale: 1.05,
-            }}
-            whileTap={{
-              scale: 0.95,
-            }}
+          <a
             href="#projects"
             style={{
               width: "max-content",
             }}
-            className="group flex items-center gap-3 rounded-[.25em] bg-gradient-to-tr from-blue-200 to-indigo-400 px-6 py-2 font-medium text-zinc-950"
+            className="group mt-3 flex items-center gap-3 rounded-[.25em] bg-gradient-to-tr from-blue-200 to-indigo-400 px-6 py-2 font-medium text-zinc-950"
           >
             Projects
             <FaArrowRight className="text-zinc-950 transition-all group-hover:-rotate-45" />
-          </motion.a>
+          </a>
         </div>
       </article>
     </section>
