@@ -1,12 +1,12 @@
 import IndividualSkills from "./IndividualSkills";
-import htmlIcon from "../assets/skill icons/icons8-html5-96.png";
-import cssIcon from "../assets/skill icons/icons8-css3-96.png";
-import javascriptIcon from "../assets/skill icons/icons8-javascript-96.png";
-import tailwindIcon from "../assets/skill icons/icons8-tailwindcss-96.png";
-import reactjsIcon from "../assets/skill icons/pngwing.com.png";
-import vuejsIcon from "../assets/skill icons/icons8-vuejs-96.png";
-import nextjsIcon from "../assets/skill icons/icons8-nextjs-96.png";
-import firebaseIcon from "../assets/skill icons/icons8-firebase-96.png";
+import htmlIcon from "../assets/skill-icons/icons8-html5-96.png";
+import cssIcon from "../assets/skill-icons/icons8-css3-96.png";
+import javascriptIcon from "../assets/skill-icons/icons8-javascript-96.png";
+import tailwindIcon from "../assets/skill-icons/icons8-tailwindcss-96.png";
+import reactjsIcon from "../assets/skill-icons/pngwing.com.png";
+import vuejsIcon from "../assets/skill-icons/icons8-vuejs-96.png";
+import nextjsIcon from "../assets/skill-icons/icons8-nextjs-96.png";
+import firebaseIcon from "../assets/skill-icons/icons8-firebase-96.png";
 
 function Skills() {
   return (
