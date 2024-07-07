@@ -4,6 +4,6 @@
 
 @layer components {
   .gradient-header {
-    @apply bg-gradient-to-r from-blue-200 from-40% to-green-300 bg-clip-text text-5xl font-semibold text-transparent md:text-7xl;
+    @apply bg-gradient-to-r from-blue-200 from-40% to-green-300 bg-clip-text text-5xl font-bold text-transparent md:text-6xl;
   }
 }

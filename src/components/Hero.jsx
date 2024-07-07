@@ -42,25 +42,25 @@ const Hero = () => {
       <div className="absolute top-[5rem] flex w-full max-w-[1000px] flex-col items-center justify-center px-3 text-gray-200 md:left-1/2 md:top-1/2 md:-translate-x-1/2 md:-translate-y-1/2 md:flex-row md:pt-8">
         <div className="z-10 flex flex-col gap-6">
           <motion.h2
-            initial={{ y: "40px", opacity: 0 }}
+            initial={{ y: "60px", opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
-            transition={{ duration: 0.6 }}
+            transition={{ duration: 0.6, delay: 0.3 }}
             className="font-regular text-xl md:text-2xl"
           >
             Hi👋, I Am Salman Farshi Sajib
           </motion.h2>
           <motion.h1
-            initial={{ y: "40px", opacity: 0 }}
+            initial={{ y: "60px", opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
-            transition={{ duration: 0.6, delay: 0.3 }}
+            transition={{ duration: 0.6, delay: 0.8 }}
             className="bg-gradient-to-r from-blue-200 from-10% via-green-300 via-60% to-indigo-300 to-90% bg-clip-text text-5xl font-bold text-transparent md:text-7xl"
           >
             Front-end Web Developer
           </motion.h1>
           <motion.h2
-            initial={{ y: "40px", opacity: 0 }}
+            initial={{ y: "60px", opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
-            transition={{ duration: 0.6, delay: 0.6 }}
+            transition={{ duration: 0.6, delay: 1.3 }}
             className="max-w-[28rem] text-[.95rem] font-light md:max-w-[35rem] md:text-[1.07rem]"
           >
             I am passionate about crafting intuitive user interfaces. With
@@ -68,14 +68,14 @@ const Hero = () => {
             interactive web experiences that engage and inspire.
           </motion.h2>
           <motion.a
-            initial={{ y: "40px", opacity: 0 }}
+            initial={{ y: "60px", opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
-            transition={{ duration: 0.6, delay: 0.9 }}
+            transition={{ duration: 0.6, delay: 1.8 }}
             style={{
               width: "max-content",
             }}
             href="#contact"
-            className="group mt-3 flex items-center gap-3 rounded-[.25em] bg-gradient-to-tr from-blue-200 to-indigo-400 px-6 py-2 font-medium text-zinc-950"
+            className="group mt-3 flex items-center gap-3 rounded-[.25em] bg-gradient-to-tr from-blue-200 to-indigo-400 px-6 py-2 font-medium text-zinc-950 transition-shadow hover:shadow-lg hover:shadow-indigo-500/50"
           >
             Contact me
             <FaArrowRight className="text-zinc-950 transition-all group-hover:-rotate-45" />

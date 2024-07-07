@@ -4,18 +4,14 @@ import cssIcon from "../assets/skill icons/icons8-css3-96.png";
 import javascriptIcon from "../assets/skill icons/icons8-javascript-96.png";
 import tailwindIcon from "../assets/skill icons/icons8-tailwindcss-96.png";
 import reactjsIcon from "../assets/skill icons/pngwing.com.png";
+import vuejsIcon from "../assets/skill icons/icons8-vuejs-96.png";
 import nextjsIcon from "../assets/skill icons/icons8-nextjs-96.png";
 import firebaseIcon from "../assets/skill icons/icons8-firebase-96.png";
-// import backgroundImage from "../assets/background-image/magicpattern-mesh-gradient-1717856914601.png";
 
 function Skills() {
   return (
     <section
       id="skills"
-      // style={{
-      //   backgroundImage: `url(${backgroundImage})`,
-      //   backgroundSize: "cover",
-      // }}
       className="relative w-full bg-zinc-950 py-[5rem] text-gray-200"
     >
       <div className="mx-auto w-full max-w-[1200px]">
@@ -25,7 +21,7 @@ function Skills() {
             width: "max-content",
             marginInline: "auto",
           }}
-          className="gradient-header text-center"
+          className="gradient-header text-center uppercase"
         >
           Skills
         </h2>
@@ -46,12 +42,17 @@ function Skills() {
           <IndividualSkills
             iconImage={tailwindIcon}
             iconName="TailwindCSS"
-            alt="javascript icon"
+            alt="Tailwind css icon"
           />
           <IndividualSkills
             iconImage={reactjsIcon}
             iconName="ReactJs"
             alt="ReactJs icon"
+          />
+          <IndividualSkills
+            iconImage={vuejsIcon}
+            iconName="VueJs"
+            alt="VueJs icon"
           />
           <IndividualSkills
             iconImage={nextjsIcon}

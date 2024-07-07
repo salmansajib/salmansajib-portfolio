@@ -38,9 +38,9 @@ const About = () => {
             style={{
               width: "max-content",
             }}
-            className="gradient-header mb-5"
+            className="gradient-header mb-4 uppercase"
           >
-            About Me
+            About
           </h2>
           <p className="max-w-[45rem] text-[.96rem] font-light md:text-[1.05rem]">
             Driven by a passion for creating visually engaging and user-friendly
@@ -66,7 +66,7 @@ const About = () => {
             style={{
               width: "max-content",
             }}
-            className="group mt-3 flex items-center gap-3 rounded-[.25em] bg-gradient-to-tr from-blue-200 to-indigo-400 px-6 py-2 font-medium text-zinc-950"
+            className="group mt-3 flex items-center gap-3 rounded-[.25em] bg-gradient-to-tr from-blue-200 to-indigo-400 px-6 py-2 font-medium text-zinc-950 transition-shadow hover:shadow-lg hover:shadow-indigo-500/50"
           >
             Projects
             <FaArrowRight className="text-zinc-950 transition-all group-hover:-rotate-45" />
