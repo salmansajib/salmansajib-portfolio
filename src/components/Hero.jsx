@@ -35,7 +35,7 @@ const Hero = () => {
         initial={{ x: "-100%", y: "-600%", rotate: "40deg", opacity: 1 }}
         animate={{ x: "0", y: 0, opacity: 1 }}
         transition={{ duration: 1.5, delay: 1, ease: "easeIn" }}
-        className="absolute -left-[100px] top-[220px] h-[120px] w-[400px] rounded-full bg-gray-200/5 blur-2xl md:w-[600px] xl:w-[1000px]"
+        className="absolute -left-[100px] top-[220px] h-[120px] w-[400px] rounded-full bg-gray-300/5 blur-2xl md:w-[600px] xl:w-[1000px]"
       />
 
       {/* ========== hero title description animated dot grid ========== */}

@@ -1,8 +1,35 @@
 import DottedGrid from "./DottedGrid";
 import { FaArrowRight } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 const About = () => {
   const dottedGradientColors = ["#c4b5fd", "#c4b5fd"];
+
+  const container = {
+    hidden: {
+      opacity: 0,
+    },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.4,
+      },
+    },
+  };
+
+  const item = {
+    hidden: {
+      opacity: 0,
+      y: 60,
+    },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.6,
+      },
+    },
+  };
 
   return (
     <section
@@ -33,16 +60,30 @@ const About = () => {
 
       {/* ========== Main content ========== */}
       <article className="absolute left-1/2 top-1/2 z-40 mx-auto w-full max-w-[1000px] -translate-x-1/2 -translate-y-1/2 px-3">
-        <div className="flex flex-col gap-5">
-          <h2
+        <motion.div
+          variants={container}
+          initial="hidden"
+          // animate="visible"
+          whileInView="visible"
+          viewport={{
+            margin: "-300px",
+            once: true,
+          }}
+          className="flex flex-col gap-5"
+        >
+          <motion.h2
+            variants={item}
             style={{
               width: "max-content",
             }}
             className="gradient-header mb-4 uppercase"
           >
             About
-          </h2>
-          <p className="max-w-[45rem] text-[.96rem] font-light md:text-[1.05rem]">
+          </motion.h2>
+          <motion.p
+            variants={item}
+            className="max-w-[45rem] text-[.96rem] font-light md:text-[1.05rem]"
+          >
             Driven by a passion for creating visually engaging and user-friendly
             experiences, I embarked on a journey of self-discovery in the world
             of front-end development. Through countless online tutorials, coding
@@ -60,8 +101,9 @@ const About = () => {
             JavaScript library of choice due to its component-based architecture
             and performance optimizations, but I am always open to learning and
             adapting to other libraries and frameworks as needed.
-          </p>
-          <a
+          </motion.p>
+          <motion.a
+            variants={item}
             href="#projects"
             style={{
               width: "max-content",
@@ -70,8 +112,8 @@ const About = () => {
           >
             Projects
             <FaArrowRight className="text-zinc-950 transition-all group-hover:-rotate-45" />
-          </a>
-        </div>
+          </motion.a>
+        </motion.div>
       </article>
     </section>
   );
